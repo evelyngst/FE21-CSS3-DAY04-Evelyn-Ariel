@@ -5,15 +5,24 @@
 
 .container {
     display: grid;
-    justify-content: center;
-}
-
-.cats img {
-    width: 10rem;
-    height: 10rem;
-    object-fit: cover ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 
 }
+
+.cats {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4 ; 
+
+   
+
+}
+
+    .cats img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover ;
+    }
 
     
 @media screen and (max-width: 480 px) {
